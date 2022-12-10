@@ -1,32 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void excecuter(int choosed)
+void ExcecComp(int choosed)
 {
-    if(choosed == 01)
-    {
-        system("./gcc_e.sh");
-    }
-    else if(choosed == 02)
-    {
-        system("./g++_e.sh");
-    }
-    else if(choosed == 03)
-    {
-        system("./python_e.sh");
-    }
-    else if(choosed == 04)
-    {
-        system("./java_e.sh");
-    }
-    else if(choosed == 05)
-    {
-        system("./csharp_e.sh");
-    }
-    else
-    {
-        printf("invaild");
-    }
+
+	switch(choosed)
+	{
+	  
+		case 01:
+		    system("./gcc_v.sh");
+		    break;
+
+		case 02:
+		    system("./g++_v.sh");
+		    break;
+
+		case 03:
+		    system("./python_v.sh");
+		    break;
+
+		case 04:
+		    system("./java_v.sh");
+		    break;
+
+		case 05:
+		    system("./csharp_.sh");
+		    break;
+		case 11:
+			system("./gcc_e.sh");
+			break;
+		case 12:
+			system("./g++_e.sh");
+			break;
+		case 13:
+			system("./python_e.sh");
+			break;
+		case 14:
+			system("./java_e.sh");
+			break;
+		case 15:
+			system("./csharp_e.sh");
+			break;
+		default:
+		    printf("Invaild\n", );
+
+	}
+
 	
 }
 
@@ -40,49 +59,7 @@ int main()
  
     printf("Choose  :");
     scanf("%d",&choosed);
-    if(choosed == 1)
-    {
-        system("./gcc_v.sh");
-    }
-    else if(choosed == 2)
-    {
-        system("./g++_v.sh");
-    }
-    else if(choosed == 3)
-    {
-        system("./python_v.sh");
-    }
-    else if(choosed == 4)
-    {
-        system("./java_v.sh");
-    }
-    else if(choosed == 5)
-    {
-        system("./csharp_.sh");
-    }
-    else if(choosed == 11)
-    {
-        system("./gcc_e.sh");
-    }
-    else if(choosed == 12)
-    {
-        system("./g++_e.sh");
-    }
-    else if(choosed == 13)
-    {
-        system("./python_e.sh");
-    }
-    else if(choosed == 14)
-    {
-        system("./java_e.sh");
-    }
-    else if(choosed == 15)
-    {
-        system("./csharp_e.sh");
-    }
-    else
-    {
-        printf("invaild");
-    }
+    ExcecComp(choosed);
+	
     return 0;
 }
